@@ -18,7 +18,7 @@ Handles names with spaces and Unicode characters, and escapes Discord markdown.
 2. Edit the script and configure your Discord webhook URL
 `nano /path/to/ArmaReforgerServer/Logs/reforger_logger.sh`
 
-##Usage
+## Usage
 Run the script as a daemon
 
 `cd /path/to/ArmaReforgerServer/Logs`
@@ -27,13 +27,13 @@ Run the script as a daemon
 The script will monitor console.log files and send notifications to the configured Discord webhook when players authenticate.
 
 
-#State
+# State
 
 Temporary state is stored in /tmp/areforger_logger to avoid duplicate notifications.
 
 Webhook results are logged to loggerwebhook.log in the same directory as the script.
 
-#Notes
+# Notes
 
 Ensure jq is installed for proper JSON escaping.
 Discord webhook URL must be valid.
