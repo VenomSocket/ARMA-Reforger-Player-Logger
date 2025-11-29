@@ -13,17 +13,16 @@ Handles names with spaces and Unicode characters, and escapes Discord markdown.
 
 1. Copy `reforger_logger.sh` into your ARMA Reforger server `Logs/` directory.
 
-```bash
-cp reforger_logger.sh /path/to/ArmaReforgerServer/Logs/
+`cp reforger_logger.sh /path/to/ArmaReforgerServer/Logs/`
 
 2. Edit the script and configure your Discord webhook URL
-nano /path/to/ArmaReforgerServer/Logs/reforger_logger.sh
+`nano /path/to/ArmaReforgerServer/Logs/reforger_logger.sh`
 
 ##Usage
 Run the script as a daemon
 
-```cd /path/to/ArmaReforgerServer/Logs
-nohup ./reforger_logger.sh &```
+`cd /path/to/ArmaReforgerServer/Logs`
+`nohup ./reforger_logger.sh &`
 
 The script will monitor console.log files and send notifications to the configured Discord webhook when players authenticate.
 
