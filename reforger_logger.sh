@@ -4,7 +4,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_BASE="$SCRIPT_DIR"
 WEBHOOK_URL="HTTPS://YOUR.DISCORD.WEBHOOK.URL.HERE"    # <<< fill in your discord webhook URL
 WEBHOOK_LOG="$LOG_BASE/loggerwebhook.log"
-DEBUG_NOSEND=0
+DEBUG_NOSEND=0 # <<< Set to 1 to only run in debug mode; this disables the Discord webhook
 STATE_DIR="/tmp/areforger_logger"
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Script dir: $SCRIPT_DIR" >&2
